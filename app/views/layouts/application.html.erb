@@ -1,15 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>PitchforkRepo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag "application" %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<head>
+</head>
+<body>
+  <% deferred_post_ids.add(Random.rand(1..100)) %>
+  <%= deferred_post_ids %>
+</body>
 </html>

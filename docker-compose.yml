@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    network_mode: host
+    volumes:
+      - ./default.conf.template:/etc/nginx/templates/default.conf.template
+    ports:
+      - 3000:3000
