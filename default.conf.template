@@ -19,5 +19,5 @@ server {
 }
 
 upstream app_server {
-  server localhost:3001;
+  server localhost:8080;
 }
